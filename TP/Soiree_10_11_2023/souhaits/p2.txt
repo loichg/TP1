@@ -1,0 +1,8 @@
+Fanta;Boisson;6
+Cake;Gateau;4
+Tomates-cerises;Légumes;6
+Carottes;Légumes;1
+Mayonnaise;Sauce;2
+Ketchup;Sauce;3
+M&Ms;Bonbon;5
+Baguette;Pain;10

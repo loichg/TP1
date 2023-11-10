@@ -1,0 +1,9 @@
+Saucisses;Viande;20
+Scoubidou;Bonbon;3
+Côtes-de-boeufs;Viande;5
+Moutarde;Sauce;1
+Pomme-de-terre;Légumes;20
+Courgettes;Légumes;4
+Haloumi;Fromage;4
+Camembert;Fromage;3
+Dragibus;Bonbon;2

@@ -1,0 +1,8 @@
+Fanta;Boisson;5
+Coca;Boisson;5
+Schweppes;Boisson;3
+Shtroumpfs;Bonbon;2
+M&Ms;Bonbon;2
+Têtes-Brulées;Bonbon;1
+Doritos;Chips;5
+Savane;Gateau;3

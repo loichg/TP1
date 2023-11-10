@@ -1,0 +1,9 @@
+Boisson
+Bonbon
+Chips
+Fromage
+Gateau
+Légumes
+Pain
+Sauce
+Viande

@@ -1,0 +1,56 @@
+HUANG Loïc 
+
+Exercice 1
+
+1) git clone https://github.com/Polytech-Sorbonne-OPI-2023/tp-note-1-loichg.git main
+
+2) touch responses.txt
+
+Exercice 2
+
+1) Le . correspond au répertoire où l'on se trouve
+
+2) mkdir Soiree_10_11_2023
+cd Soiree_10_11_2023 
+mkdir souhaits listes
+
+3) cp ~/Desktop/TP/main/* ~/Desktop/TP/Soiree_10_11_2023/souhaits/
+
+Exercice 3
+
+1) cat p1.txt
+cat p2.txt
+cat p3.txt
+ou cat * pour tous les voir ensemble
+
+2) man cut 
+-d delim : Use delim as the field delimiter character instead of the tab character.
+-f list : The list specifies fields, separated in the input by the field delimiter character (see the -d option).  Output fields are separated by a single occurrence of the field delimiter character.
+
+-d ";" permet de supprimer les délimiter ";"
+-f2 permet de prendre en compte seulement la 2eme chaine de caractère après le délimiter ";"
+Cut va afficher le document en supprimant ce que l'on souhaite, cad les ; et la chaine de caractère avant le premier ; ou après le deuxième ;
+ 
+Exemple : pour Fanta;Boisson;5 Coca;Boisson;5 la commande affiche Boisson Boisson
+
+3) sort -u 
+
+4) cut -d";" -f2 p?.txt > p.txt; sort -u p.txt > categorie.txt ; rm p.txt
+
+5) wc -w categorie.txt
+
+6) wc -w categorie.txt
+
+Exercice 4
+
+1) grep Bonbon *
+
+2) grep Bonbon p?.txt > Bonbon.txt ; cut -d";" -f1 -f3 Bonbon.txt ; rm Bonbon.txt
+
+3) Il faut ajouter > Bonbon.txt à une commande où on fusionne cmd1 et cmd2 avec cmd2 qui utilise le résultat de cmd1 (Le symbole | ne semble pas fonctionner pour faire ceci)
+Pour la réponse que j'ai donné en 2) il suffie d'enlever la dernière commande rm Bonbon.txt
+
+4) La commande va affecter à i chaque catégorie de catégorie.txt pour chaque itération, ainsi on peut utiliser i pour parcourir l'ensemble des fichiers p?.txt pour les classer par catégorie avec for i in `cat categorie.txt`; do echo $i; grep i p?.txt;  done
+
+5) for i in `cat categorie.txt`; do echo $i; grep $i p?.txt >> a.txt; done;  cut -d";" -f1 -f3 a.txt > courses.txt ; rm a.txt
+
